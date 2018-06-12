@@ -1,5 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
+#restaurant-container{
+  flex: 1;
+  flex-direction: row;
+  height: 0;
+  width: 100vw;
+  overflow-x: auto; 
+}
 @media only screen and (max-width: 300px){
   #map-container{
     width: 100%;
