@@ -295,7 +295,7 @@ nav h1 a {
   }
 }
 @media screen and (max-width: 670px){
-  .restaurant-img{
+  .inside .restaurant-img{
     height: 10%;
   }
   .inside #map-container{

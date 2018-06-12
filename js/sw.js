@@ -1,6 +1,6 @@
 self.addEventListener('install', function(event) {
   event.waitUntil(
-    caches.open('simple-sw-v29').then(function(cache) {
+    caches.open('simple-sw-30').then(function(cache) {
       return cache.addAll([
         './',
         './img/',
