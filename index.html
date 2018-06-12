@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
   <link rel="stylesheet" href="css/styles.css">
@@ -20,7 +19,7 @@
     <section id="map-container" aria-label="map">
       <div id="map"></div>
     </section>
-    <section id="restaurant-container">
+    <section>
       <div class="filter-options">
         <h2>Filter Results</h2>
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" aria-label="Neighborhoods" role="listbox">
@@ -30,7 +29,9 @@
           <option value="all" role="option">All Cuisines</option>
         </select>
       </div>
-      <ul id="restaurants-list"></ul>
+      <div id="list-container">
+        <ul id="restaurants-list"></ul>
+      </div>
     </section>
   </main>
 

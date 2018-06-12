@@ -3,6 +3,11 @@ let restaurants,
   cuisines
 var map
 var markers = []
+if(navigator.serviceWorker){
+  navigator.serviceWorker.register('/js/sw.js')
+  .then(function(data){ console.log('registered!', data)})
+  .catch(function(error){console.log('failed!', error)})
+}
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
@@ -144,7 +149,7 @@ createRestaurantHTML = (restaurant) => {
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   li.append(image);
 
-  const name = document.createElement('h1');
+  const name = document.createElement('h2');
   name.innerHTML = restaurant.name;
   li.append(name)
 
